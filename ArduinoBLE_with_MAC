@@ -6,7 +6,7 @@
 BLEService myService("00001101-0000-1000-8000-00805F9B34FB"); 
 BLEStringCharacteristic myCharacteristic("00001101-0000-1000-8000-00805F9B34FB", BLERead | BLEWrite, 20); // 최대 20바이트 문자열
 
-#define PIN 4 // RGB LED 스트립이 연결된 아두이노의 핀 번호
+#define PIN 4 // RGB LED 스트립이 연결된 아두이노의 핀 번호 
 #define NUMPIXELS 18 // LED 스트립에 있는 LED 개수
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
