@@ -3,8 +3,8 @@
 #include "HX711.h" // HX711 라이브러리 추가
 
 // BLE 서비스 및 특성 UUID 정의
-BLEService myService("12345678-1234-5678-1234-567812345678"); 
-BLEStringCharacteristic myCharacteristic("87654321-8765-4321-8765-432187654321", 
+BLEService myService("00001101-0000-1000-8000-00805F9B34FB"); 
+BLEStringCharacteristic myCharacteristic("00001101-0000-1000-8000-00805F9B34FB", 
                                          BLERead | BLEWrite, 20); // 최대 20바이트 문자열
 
 #define PIN 4 // RGB LED 스트립이 연결된 아두이노의 핀 번호
