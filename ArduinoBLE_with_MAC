@@ -6,7 +6,7 @@
 BLEService myService("00001101-0000-1000-8000-00805F9B34FB"); 
 BLEStringCharacteristic myCharacteristic("00001101-0000-1000-8000-00805F9B34FB", BLERead | BLEWrite, 20); // 최대 20바이트 문자열
 
-#define PIN 4 // RGB LED 스트립이 연결된 아두이노의 핀 번호 
+#define PIN 4 // RGB LED 스트립이 연결된 아두이노의 핀 번호
 #define NUMPIXELS 18 // LED 스트립에 있는 LED 개수
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
@@ -67,14 +67,16 @@ void loop() {
     while (central.connected()) {
       setAllPixelsColor(0, 0, 255); // 파란색
       
-      // 여기서 로드셀의 무게를 읽고 시리얼 모니터에 출력합니다.
-      float weight = scale.get_units(10); // 로드셀로부터 무게를 읽어옴, 10번 측정 후 평균값 사용, g에서 kg으로 변환
+      // 실시간 무게를 읽고 시리얼 모니터에 출력
+      float weight = scale.get_units(10); // 로드셀로부터 무게를 읽어옴, 10번 측정 후 평균값 사용
+      char weightStr[10];
+      dtostrf(weight, 1, 2, weightStr); // 무게를 문자열로 변환
       Serial.print("실시간 무게: ");
       Serial.print(weight);
       Serial.println(" kg"); // 단위를 kg으로 표시
 
+      // 새로운 값을 쓰기 전에 중앙 장치에서 명령을 처리
       if (myCharacteristic.written()) {
-        // 특성에 새로운 값이 쓰여진 경우
         String value = myCharacteristic.value();
         Serial.print("새로운 값: ");
         Serial.println(value);
@@ -86,20 +88,11 @@ void loop() {
           setAllPixelsColor(255, 105, 180); // 핑크색
           delay(5000); // 5초 대기
           setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
-        } else if (value == "B") {
-          // 현재 무게를 BLE를 통해 전송
-          char weightStr[10];
-          dtostrf(weight, 1, 2, weightStr); // 무게를 문자열로 변환
-          myCharacteristic.writeValue(weightStr);
-          Serial.println("무게 전송");
-          setAllPixelsColor(255, 165, 0); // 주황색
+        } else if (value == "C") {
+          Serial.println("목표치 달성"); // 시리얼 모니터에 "목표치 달성" 출력
+          setAllPixelsColor(0, 255, 0); // LED를 초록색으로 변경
           delay(5000); // 5초 대기
           setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
-        } else if (value == "C") {
-           Serial.println("목표치 달성"); // 시리얼 모니터에 "목표치 달성" 출력
-           setAllPixelsColor(0, 255, 0); // LED를 초록색으로 변경
-           delay(5000); // 5초 대기
-           setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
         } else if (value == "D") {
           // "물 추가"
           Serial.println("물 추가");
@@ -114,6 +107,11 @@ void loop() {
           setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
         }
       }
+
+      // BLE 특성에 무게 전송
+      myCharacteristic.writeValue(weightStr);
+
+      delay(1000); // 1초 대기 (실시간 전송 간격 설정)
     }
 
     // 중앙 장치와의 연결이 끊어지면 붉은색으로 설정
