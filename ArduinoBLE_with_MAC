@@ -46,7 +46,7 @@ void setup() {
   scale.tare(); // 시작 시 영점 조절
 
   // 스케일 팩터 설정(로드셀)
-  scale.set_scale(400100.00); // 400100.00
+  scale.set_scale(-400100.00); // 400100.00
 
   // 초기 상태 (연결 대기 중) 노란색으로 설정
   setAllPixelsColor(255, 255, 0); // 노란색
@@ -65,7 +65,7 @@ void loop() {
 
     // 중앙 장치와 연결된 동안 파란색으로 유지
     while (central.connected()) {
-      setAllPixelsColor(0, 0, 255); // 파란색
+      setAllPixelsColor(255, 115, 10); // 파란색
       
       // 실시간 무게를 읽고 시리얼 모니터에 출력
       float weight = scale.get_units(10); // 로드셀로부터 무게를 읽어옴, 10번 측정 후 평균값 사용
@@ -85,32 +85,32 @@ void loop() {
           // 영점 조절
           scale.tare();
           Serial.println("영점 조절 완료");
-          setAllPixelsColor(255, 105, 180); // 핑크색
+          setAllPixelsColor(0, 255, 0); // 핑크색
           delay(5000); // 5초 대기
-          setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
         } else if (value == "C") {
           Serial.println("목표치 달성"); // 시리얼 모니터에 "목표치 달성" 출력
           setAllPixelsColor(0, 255, 0); // LED를 초록색으로 변경
           delay(5000); // 5초 대기
-          setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
         } else if (value == "D") {
           // "물 추가"
           Serial.println("물 추가");
-          setAllPixelsColor(0, 191, 255); // 하늘색
+          setAllPixelsColor(0, 255, 0); // 하늘색
           delay(5000); // 5초 대기
-          setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
         } else if (value == "E") {
           // "물 버림"
           Serial.println("물 버림");
-          setAllPixelsColor(255, 255, 0); // 노란색
+          setAllPixelsColor(0, 255, 0); // 노란색
           delay(5000); // 5초 대기
-          setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
         } else if (value == "B") {
           // "무게전송"
           Serial.println("무게 전송");
-          setAllPixelsColor(255, 35, 0); // 주황
+          setAllPixelsColor(0, 255, 0); // 주황
           delay(5000); // 5초 대기
-          setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
         }
       }
 
