@@ -1,4 +1,4 @@
-#include <ArduinoBLE.h> 
+#include <ArduinoBLE.h>
 #include <Adafruit_NeoPixel.h>
 #include "HX711.h" // HX711 라이브러리 추가
 
@@ -46,7 +46,7 @@ void setup() {
   scale.tare(); // 시작 시 영점 조절
 
   // 스케일 팩터 설정(로드셀)
-  scale.set_scale(400100.00);
+  scale.set_scale(400100.00); // 400100.00
 
   // 초기 상태 (연결 대기 중) 노란색으로 설정
   setAllPixelsColor(255, 255, 0); // 노란색
@@ -103,6 +103,12 @@ void loop() {
           // "물 버림"
           Serial.println("물 버림");
           setAllPixelsColor(255, 255, 0); // 노란색
+          delay(5000); // 5초 대기
+          setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
+        } else if (value == "B") {
+          // "무게전송"
+          Serial.println("무게 전송");
+          setAllPixelsColor(255, 35, 0); // 주황
           delay(5000); // 5초 대기
           setAllPixelsColor(0, 0, 255); // 다시 파란색으로 변경
         }
