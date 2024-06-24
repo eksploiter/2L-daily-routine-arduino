@@ -63,9 +63,9 @@ void loop() {
     // 연결되었을 때 초록색으로 설정
     setAllPixelsColor(0, 255, 0); // 초록색
 
-    // 중앙 장치와 연결된 동안 파란색으로 유지
+    // 중앙 장치와 연결된 동안 기본색으로 유지
     while (central.connected()) {
-      setAllPixelsColor(255, 115, 10); // 파란색
+      setAllPixelsColor(255, 115, 10); // 기본색
       
       // 실시간 무게를 읽고 시리얼 모니터에 출력
       float weight = scale.get_units(10); // 로드셀로부터 무게를 읽어옴, 10번 측정 후 평균값 사용
@@ -87,30 +87,30 @@ void loop() {
           Serial.println("영점 조절 완료");
           setAllPixelsColor(0, 255, 0); // 핑크색
           delay(5000); // 5초 대기
-          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 기본색으로 변경
         } else if (value == "C") {
           Serial.println("목표치 달성"); // 시리얼 모니터에 "목표치 달성" 출력
           setAllPixelsColor(0, 255, 0); // LED를 초록색으로 변경
           delay(5000); // 5초 대기
-          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 기본색으로 변경
         } else if (value == "D") {
           // "물 추가"
           Serial.println("물 추가");
           setAllPixelsColor(0, 255, 0); // 하늘색
           delay(5000); // 5초 대기
-          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 기본색으로 변경
         } else if (value == "E") {
           // "물 버림"
           Serial.println("물 버림");
           setAllPixelsColor(0, 255, 0); // 노란색
           delay(5000); // 5초 대기
-          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 기본색으로 변경
         } else if (value == "B") {
           // "무게전송"
           Serial.println("무게 전송");
           setAllPixelsColor(0, 255, 0); // 주황
           delay(5000); // 5초 대기
-          setAllPixelsColor(255, 115, 10); // 다시 파란색으로 변경
+          setAllPixelsColor(255, 115, 10); // 다시 기본색으로 변경
         }
       }
 
