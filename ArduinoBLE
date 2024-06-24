@@ -1,3 +1,4 @@
+'''cpp
 #include <ArduinoBLE.h>
 #include <Adafruit_NeoPixel.h>
 #include "HX711.h" // HX711 라이브러리 추가
