@@ -1,7 +1,6 @@
 # 2L Daily Routine (ArduinoBLE)
 It is an application that helps you drink 2L of water, the recommended daily amount.
-<br><br>
-
+<br>
 
 ### Description
 The product measures your water intake with a weight sensor and sends it to a Bluetooth-connected app. Based on this data, the app calculates, visualizes, and shows your daily intake. When the user achieves the recommended intake, he or she sends a congratulatory notification to help build a healthy habit. It is also convenient to check the connection and charging status with LED indicators.
@@ -9,7 +8,8 @@ The product measures your water intake with a weight sensor and sends it to a Bl
 The weight sensor accurately detects the weight of water and sends it to the app in real time, allowing users to accurately determine their water intake
 Bluetooth-connected apps automatically collect and visualize water intake data to make it easier to check user's water intake patterns
 Encourage the formation of healthy habits with celebratory reminders when achieving the goal of drinking 2L water per day
-
+<br>
+<br>
 
 ### You can see how it works!
 <a href="https://www.youtube.com/watch?v=0itAvftwnco">
@@ -65,4 +65,4 @@ Encourage the formation of healthy habits with celebratory reminders when achiev
 
 
 ## Result of the Contest
-- CAPSTONE DESIGN for 4th grade 1st semester - a silver award 🥈 (2nd place)
+- CAPSTONE DESIGN - a silver award 🥈 (2nd place)
