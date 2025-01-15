@@ -1,14 +1,5 @@
-# 2L Daily Routine (ArduinoBLE)
+# 2L Daily Routine (arduino)
 It is an application that helps you drink 2L of water, the recommended daily amount.
-<br>
-
-### Description
-The product measures your water intake with a weight sensor and sends it to a Bluetooth-connected app. Based on this data, the app calculates, visualizes, and shows your daily intake. When the user achieves the recommended intake, he or she sends a congratulatory notification to help build a healthy habit. It is also convenient to check the connection and charging status with LED indicators.
-
-The weight sensor accurately detects the weight of water and sends it to the app in real time, allowing users to accurately determine their water intake
-Bluetooth-connected apps automatically collect and visualize water intake data to make it easier to check user's water intake patterns
-Encourage the formation of healthy habits with celebratory reminders when achieving the goal of drinking 2L water per day
-<br>
 <br>
 
 ### You can see how it works!
@@ -17,19 +8,68 @@ Encourage the formation of healthy habits with celebratory reminders when achiev
             src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=YouTube&logoColor=white&link=https://www.youtube.com/watch?v=0itAvftwnco"
             style="height: auto; margin-left: 20px; margin-right: 20px; padding: 10px;"/>
     </a>
-
-<br>
-<br>
-
-
-### 📆 Project Period
-
-- CAPSTONE DESIGN : 2024.03.01 ~ 2024.06.14
+<br/>
 <br/>
 
 
-### 😎 Members
+## 📆 Project Period
+- CAPSTONE DESIGN : 2024.03.01 ~ 2024.06.14
+<br>
 
+## Description
+The product measures your water intake with a weight sensor and sends it to a Bluetooth-connected app. 
+Based on this data, the app calculates, visualizes, and shows your daily intake. 
+When the user achieves the recommended intake, the app sends a congratulatory notification to help build a healthy habit. 
+It is also convenient to check the connection and charging status with LED indicators.
+<br>
+1. The weight sensor accurately detects the weight of water and sends it to the app in real time, allowing users to accurately determine their water intake
+2. Bluetooth-connected apps automatically collect and visualize water intake data to make it easier to check user's water intake patterns
+3. Encourage the formation of healthy habits with celebratory reminders when achieving the goal of drinking 2L water per day
+<br>
+
+# The results
+## · Arduino (Hardware)
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a5d96fa2-7943-4224-8bcf-d1f2be894f5f" width="30%" />
+  <img src="https://github.com/user-attachments/assets/bd2d1567-cb97-4e07-8a03-d25335fbc98d" width="30%" />
+  <img src="https://github.com/user-attachments/assets/6d3949ae-8f87-4674-b712-0d48955faf1d" width="30%" />
+</p>
+<p align="center">
+  Default Status      |      Not Connected      |      State Change
+</p>
+</br>
+
+
+## Tech Stack
+#### Design & Frontend
+<p>
+  <img src="https://img.shields.io/badge/Android-34A853?style=for-the-badge&logo=Android&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white"/>
+</p>
+
+
+#### Backend (Bluetooth function)
+<p>
+  <img src="https://img.shields.io/badge/Android-34A853?style=for-the-badge&logo=Android&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white"/>
+</p>
+
+## Dev tools
+<p> 
+  <img src="https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=Arduino&logoColor=white"/>
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+</p>
+
+
+#### CoworkingTools
+<p>
+  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+  <img src="https://img.shields.io/badge/ZOOM-0B5CFF?style=for-the-badge&logo=ZOOM&logoColor=white"/>
+</p>
+<br>
+
+## 😎 Members
 <table>
    <tr>
     <td align="center"><b><a href="https://github.com/eksploiter">eksploiter</a></b></td>
@@ -47,22 +87,6 @@ Encourage the formation of healthy habits with celebratory reminders when achiev
   </tr>
 </table>
 <br/>
-
-
-## Dev tools
-<p> 
-  <img src="https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=Arduino&logoColor=white"/>
-  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
-</p>
-
-
-#### CoworkingTools
-<p>
-  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
-  <img src="https://img.shields.io/badge/ZOOM-0B5CFF?style=for-the-badge&logo=ZOOM&logoColor=white"/>
-</p>
-<br>
-
 
 ## Result of the Contest
 - CAPSTONE DESIGN - a silver award 🥈 (2nd place)
