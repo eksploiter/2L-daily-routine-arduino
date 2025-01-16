@@ -50,8 +50,8 @@ It is also convenient to check the connection and charging status with LED indic
 </table>
 </br>
 
-## Tech Stack
-#### 3D Modeling
+# Tech Stack
+## 3D Modeling
 <p>
   <img src="https://img.shields.io/badge/SolidWorks-005386?style=for-the-badge&logo=dassaultsystemes&logoColor=white"/>
 </p>
@@ -62,8 +62,7 @@ It is also convenient to check the connection and charging status with LED indic
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
 </p>
 
-
-#### CoworkingTools
+## CoworkingTools
 <p>
   <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
   <img src="https://img.shields.io/badge/ZOOM-0B5CFF?style=for-the-badge&logo=ZOOM&logoColor=white"/>
