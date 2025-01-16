@@ -27,8 +27,8 @@ It is also convenient to check the connection and charging status with LED indic
 3. Encourage the formation of healthy habits with celebratory reminders when achieving the goal of drinking 2L water per day
 <br>
 
-# The results
-## · Arduino (Hardware)
+## The results
+### · Arduino (Hardware)
 <h3>✸ 제품 상태 변화</h3>
 
 <table>
@@ -50,7 +50,7 @@ It is also convenient to check the connection and charging status with LED indic
 </table>
 </br>
 
-# Tech Stack
+## Tech Stack
 #### 3D Modeling
 <p>
   <img src="https://img.shields.io/badge/SolidWorks-005386?style=for-the-badge&logo=dassaultsystemes&logoColor=white"/>
@@ -69,7 +69,7 @@ It is also convenient to check the connection and charging status with LED indic
 </p>
 <br>
 
-### 😎 Members
+## Team
 |<img src="https://avatars.githubusercontent.com/u/136697128?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/70271230?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/164983782?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/164983586?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/164983694?v=4" width="150" height="150"/>|
 |:-:|:-:|:-:|:-:|:-:|
 |eksploiter<br/>Leader<br/>[@eksploiter](https://github.com/eksploiter)|Chan0322<br/>H/W<br/>[@Chan0322](https://github.com/Chan0322)|KangPeanut<br/>H/W<br/>[@KangPeanut](https://github.com/KangPeanut)|papjukuk<br/>S/W<br/>[@papjukuk](https://github.com/papjukuk)|8haneol8<br/>S/W<br/>[@8haneol8](https://github.com/8haneol8)|
