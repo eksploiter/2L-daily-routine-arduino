@@ -33,9 +33,9 @@ It is also convenient to check the connection and charging status with LED indic
 
 <table>
 	<tr>
-    <td colspan="1" align="center">light bulb color</td>
-	  <td colspan="1" align="center">red color</td>
-                <td colspan="1" align="center">green color</td>
+    <td colspan="1" align="center">Light bulb Color</td>
+	  <td colspan="1" align="center">Red Color</td>
+                <td colspan="1" align="center">Green Color</td>
   </tr>
   <tr>
     <td align="center"><img width="329" src="https://github.com/user-attachments/assets/a5d96fa2-7943-4224-8bcf-d1f2be894f5f"/></td>
