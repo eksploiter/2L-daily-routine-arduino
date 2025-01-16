@@ -29,17 +29,26 @@ It is also convenient to check the connection and charging status with LED indic
 
 # The results
 ## · Arduino (Hardware)
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a5d96fa2-7943-4224-8bcf-d1f2be894f5f" width="30%" />
-  <img src="https://github.com/user-attachments/assets/bd2d1567-cb97-4e07-8a03-d25335fbc98d" width="30%" />
-  <img src="https://github.com/user-attachments/assets/6d3949ae-8f87-4674-b712-0d48955faf1d" width="30%" />
-</p>
-<p align="center">
-  Default Status      |      Not Connected      |      State Change
-</p>
-</br>
+<h3>✸ 제품 상태 변화</h3>
 
+<table>
+	<tr>
+    <td colspan="1" align="center">light bulb color</td>
+	  <td colspan="1" align="center">red color</td>
+                <td colspan="1" align="center">green color</td>
+  </tr>
+  <tr>
+    <td align="center"><img width="329" src="https://github.com/user-attachments/assets/a5d96fa2-7943-4224-8bcf-d1f2be894f5f"/></td>
+    <td align="center"><img width="329" src="https://github.com/user-attachments/assets/bd2d1567-cb97-4e07-8a03-d25335fbc98d"/></td>
+    <td align="center"><img width="329" src="https://github.com/user-attachments/assets/6d3949ae-8f87-4674-b712-0d48955faf1d"/></td>
+  </tr>
+  <tr>
+    <td colspan="1" align="center">Default Status</td>
+	  <td colspan="1" align="center">Not Connected</td>
+          <td colspan="1" align="center">State Change</td>
+  </tr>
+</table>
+</br>
 
 ## Tech Stack
 #### Design & Frontend
